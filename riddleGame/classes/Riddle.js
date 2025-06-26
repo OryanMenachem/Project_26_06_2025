@@ -1,30 +1,27 @@
-import readline from 'readline-sync';
+import readline, { question } from 'readline-sync';
 import * as QUES from '../questions/allQuestions.js'
 
 export class Question {
 
-    
+    constructor(question) {
 
-
-    constructor(setOfQuestions) {
-
-        this.questionsArray = setOfQuestions;
+        this.id = question.id;
+        this.category = question.category;
+        this.questionDescription = question.questionDescription;
+        this.correctAnswer = question.correctAnswer;
     }
 
 
     ask() {
 
-        if (!this.questionsArray) {return `Questions class not initialized with questions!` }
-
-        for (const question of this.questionsArray) {
-
         while (true) {
 
-            console.log(`Question ${question.id}: ${question.category} `);
-            console.log(`${question.questionDescription} `);
+            console.log(`Question ${this.id}: ${this.category} `);
+            console.log(`${this.questionDescription} `);
+
             const answer = readline.question(`> `);
 
-            if (answer == question.correctAnswer) {
+            if (answer == this.correctAnswer) {
 
                 console.log(`correct answer :)`);
                 break;
@@ -33,15 +30,21 @@ export class Question {
             console.log(`wrong answer :(`);
             
         }
+   
+        
     }
+}
+    
+
+
+
+
+      
+
 
                 
             
 
-
-
-    }
-}
 
 
 
