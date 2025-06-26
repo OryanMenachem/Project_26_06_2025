@@ -1,5 +1,5 @@
 import readline, { question } from 'readline-sync';
-
+import chalk from 'chalk';
 
 export class Question {
 
@@ -20,16 +20,18 @@ export class Question {
             console.log(`${this.questionDescription} `);
 
             const answer = readline.question(`> `);
-            console.log();
+ 
             
 
             if (answer == this.correctAnswer) {
 
-                console.log(`correct answer :)\n`);
+                console.log(chalk.green(`\ncorrect answer :)\n`));
                 break;
             }
 
-            console.log(`wrong answer :(\n`);
+            console.log(chalk.red(`\nwrong answer :(\n`));
+            
+
             
         }
    

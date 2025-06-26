@@ -22,7 +22,7 @@ import {question7} from './question7.js'
 
 
 
-export const questionSet = [question1, question2, question3, question4, question7 ];
+export default [question1, question2, question3, question4, question7 ];
 
 
 
