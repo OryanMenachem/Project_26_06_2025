@@ -1,14 +1,14 @@
 import readline, { question } from 'readline-sync';
-import * as QUES from '../questions/allQuestions.js'
+
 
 export class Question {
 
-    constructor(question) {
+    constructor(questionObj) {
 
-        this.id = question.id;
-        this.category = question.category;
-        this.questionDescription = question.questionDescription;
-        this.correctAnswer = question.correctAnswer;
+        this.id = questionObj.id;
+        this.category = questionObj.category;
+        this.questionDescription = questionObj.questionDescription;
+        this.correctAnswer = questionObj.correctAnswer;
     }
 
 
@@ -20,14 +20,16 @@ export class Question {
             console.log(`${this.questionDescription} `);
 
             const answer = readline.question(`> `);
+            console.log();
+            
 
             if (answer == this.correctAnswer) {
 
-                console.log(`correct answer :)`);
+                console.log(`correct answer :)\n`);
                 break;
             }
 
-            console.log(`wrong answer :(`);
+            console.log(`wrong answer :(\n`);
             
         }
    

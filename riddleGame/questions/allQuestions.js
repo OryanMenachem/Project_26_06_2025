@@ -19,26 +19,11 @@ import {question7} from './question7.js'
 // import {question19} from './question19.js'
 // import {question20} from './question20.js'
 
-export const ques1 = question1;
-export const ques2 = question2;
-export const ques3 = question3;
-export const ques4 = question4;
-//export const question5 = question5;
-//export const question6 = question6;
-export const ques7 = question7;
-//export const question8 = question8;
-//export const question9 = question9;
-//export const question10 = question10;
-//export const question11= question11;
-//export const question12 = question12;
-//export const question13 = question13;
-//export const question14 = question14;
-//export const question15 = question15;
-//export const question16 = question16;
-//export const question17 = question17;
-//export const question18 = question18;
-//export const question19 = question19;
-//export const question20 = question20;
+
+
+
+export const questionSet = [question1, question2, question3, question4, question7 ];
+
 
 
 
