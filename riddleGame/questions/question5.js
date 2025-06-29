@@ -1,6 +1,6 @@
 export const question5 = {
     id: 5,
-    category: 'literature',
-    questionDescription: 'Who wrote "Romeo and Juliet"?',
-    correctAnswer: 'William Shakespeare'
+    category: 'math',
+    questionDescription: 'What is the square root of 64?',
+    correctAnswer: 8
 };
