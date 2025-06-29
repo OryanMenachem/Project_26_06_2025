@@ -20,7 +20,7 @@ import { americanQuestion3 } from './AmericanQuestions/AmericanQuestion3.js'
 
 
 
-export default [question1];
+export default [question1, question2, question3, question4, question5, question6, americanQuestion1, americanQuestion2, americanQuestion3 ];
 
 
 

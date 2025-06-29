@@ -18,24 +18,39 @@ console.log(`At each stage you will have to answer a trivia question from a spec
 let playerName;
 
 while (true) {
-
-    playerName = readline.question(`Please enter your name:  `);
+    
+    console.log(`Please enter your name:  `);
+    playerName = readline.question(Colors.cyanColor(`> `));
 
     if (playerName) {break;}
 
-    console.log(Colors.mistakeColor(`No name entered!`));
+    console.log(Colors.errorColor(`No name entered!`));
     
 }
 
 
-console.log(`\nHello ` + Colors.cyanColor(playerName) + `, starting right away.\n`);
+console.log(`\nHello ` + Colors.cyanColor(playerName) + `, starting right away...\n`);
 
 
 const player1 = new Player(playerName);
 
 
 
+let level;
+
+while (true) {
+    
+   console.log('choose level: easy / medium / hard\n');
+   level = readline.question(Colors.cyanColor('> '))
+   if (['easy','medium','hard'].includes(level)) {break;}
+   console.log(Colors.errorColor('\nThere is no such level!\n'));
+   
+
+}
+
 for (const ques of questionSet) {
+
+    if (ques.difficulty != level) {continue;}
 
     const questionsClass = new Question(ques);
 
@@ -49,7 +64,7 @@ for (const ques of questionSet) {
 
 }
 
-console.log(Colors.successColor(`Congratulations, you won the QUIZ game.\n`));
+console.log(Colors.cyanColor(`Congratulations! `), `you won the QUIZ game.\n`);
 
 player1.showStats();
 
