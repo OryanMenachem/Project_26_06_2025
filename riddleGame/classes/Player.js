@@ -15,8 +15,8 @@ export class Player {
 
     showStats() {
 
-        console.log(`Total time: `, Colors.cyanColor(this.times.reduce((acc, num) => acc + num, 0)/ 1000), ` seconds`);
-        console.log(`Average time per question: `, Colors.cyanColor(this.times.reduce((acc, num) => acc + num, 0) / this.times.length / 1000), ` seconds`);
+        console.log(`Total time: `, Colors.cyanColor(Math.floor(this.times.reduce((acc, num) => acc + num, 0)/ 1000)), ` seconds`);
+        console.log(`Average time per question: `, Colors.cyanColor(Math.floor(this.times.reduce((acc, num) => acc + num, 0) / this.times.length / 1000)), ` seconds`);
         
     }
 

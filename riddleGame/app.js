@@ -36,21 +36,22 @@ const player1 = new Player(playerName);
 
 
 
-let level;
+let difficultyLevel;
+
 
 while (true) {
     
    console.log('choose level: easy / medium / hard\n');
-   level = readline.question(Colors.cyanColor('> '))
-   if (['easy','medium','hard'].includes(level)) {break;}
+   difficultyLevel = readline.question(Colors.cyanColor('> '))
+   if (['easy','medium','hard'].includes(difficultyLevel)) {break;}
    console.log(Colors.errorColor('\nThere is no such level!\n'));
    
 
 }
 
-for (const ques of questionSet) {
+const arrayOfQuestions = questionSet.filter((element => element.difficulty == difficultyLevel))
 
-    if (ques.difficulty != level) {continue;}
+for (const ques of arrayOfQuestions) {
 
     const questionsClass = new Question(ques);
 
