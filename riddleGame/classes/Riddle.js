@@ -1,5 +1,7 @@
 import readline, { question } from 'readline-sync';
-import chalk from 'chalk';
+import * as Colors from '../Colors.js'
+
+
 
 export class Question {
 
@@ -25,11 +27,11 @@ export class Question {
 
             if (answer == this.correctAnswer) {
 
-                console.log(chalk.green(`\ncorrect answer :)\n`));
+                console.log(Colors.successColor(`\ncorrect answer :)\n`));
                 break;
             }
 
-            console.log(chalk.red(`\nwrong answer :(\n`));
+            console.log(Colors.mistakeColor(`\nwrong answer :(\n`));
             
 
             
@@ -42,8 +44,6 @@ export class Question {
 
 
 
-
-      
 
 
                 

@@ -1,6 +1,6 @@
 import chalk from 'chalk';
 
-export const goldColor = chalk.hex(`#FFD700`);
+export const cyanColor = chalk.cyan;
 
 export const mistakeColor = chalk.hex(`#FF3131`);
 

@@ -4,7 +4,14 @@ import {Question} from './classes/Riddle.js';
 import {Player} from './classes/Player.js';
 import * as Colors  from './Colors.js';
 
-console.log(`\nWelcome to the` + Colors.goldColor(` QUIZ `) + `game!\n`);
+
+
+
+
+
+
+
+console.log(`\nWelcome to the` + Colors.cyanColor(` QUIZ `) + `game!\n`);
 
 console.log(`At each stage you will have to answer a trivia question from a specific category until you finish all the questions.\n`);
 
@@ -21,7 +28,7 @@ while (true) {
 }
 
 
-console.log(`\nHello ` + Colors.goldColor(playerName), + ` starting right away.\n`);
+console.log(`\nHello ` + Colors.cyanColor(playerName) + `, starting right away.\n`);
 
 
 const player1 = new Player(playerName);
@@ -48,6 +55,10 @@ player1.showStats();
 
 
     
+
+
+
+
 
 
 
