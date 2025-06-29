@@ -9,6 +9,7 @@ export class Question {
 
         this.id = questionObj.id;
         this.category = questionObj.category;
+        this.difficulty = questionObj.difficulty;
         this.questionDescription = questionObj.questionDescription;
         this.correctAnswer = questionObj.correctAnswer;
     }
@@ -18,10 +19,12 @@ export class Question {
 
         while (true) {
 
-            console.log(`Question ${this.id}: ${this.category} `);
-            console.log(`${this.questionDescription} `);
+            console.log(`\nQuestion ${this.id}:`, Colors.cyanColor(this.category), `\n`);
+            console.log(`Difficulty Level:`, Colors.cyanColor(this.difficulty), `\n`);
+            
+            console.log(`${this.questionDescription} \n`);
 
-            const answer = readline.question(`> `);
+            const answer = readline.question(Colors.cyanColor(`> `));
  
             
 
@@ -31,7 +34,7 @@ export class Question {
                 break;
             }
 
-            console.log(Colors.mistakeColor(`\nwrong answer :(\n`));
+            console.log(Colors.errorColor(`\nwrong answer :(\n`));
             
 
             
