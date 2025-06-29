@@ -1,6 +1,6 @@
 export const question14 = {
     id: 14,
-    category: 'history',
-    questionDescription: 'Who was the first president of the United States?',
-    correctAnswer: 'George Washington'
+    category: 'math',
+    questionDescription: 'What is the value of pi (up to 2 decimal places)?',
+    correctAnswer: 3.14
 };

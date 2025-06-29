@@ -12,6 +12,7 @@ export class Question {
         this.difficulty = questionObj.difficulty;
         this.questionDescription = questionObj.questionDescription;
         this.correctAnswer = questionObj.correctAnswer;
+        this.timeLimit = questionObj.timeLimit;
     }
 
 
@@ -46,6 +47,23 @@ export class Question {
     
 
 
+
+export function askAllQuestions(arrayOfQuestions, player) {
+    
+    for (const ques of arrayOfQuestions) {
+
+    const questionsClass = new Question(ques);
+
+    const startTime = Date.now();
+
+    questionsClass.ask();
+
+    const endTime = Date.now();
+
+    player.recordTime(startTime, endTime);
+
+   }
+}
 
 
 

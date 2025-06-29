@@ -3,5 +3,6 @@ export const question6 = {
     category: 'animals',
     difficulty: 'easy',
     questionDescription: 'Which animal is known as the largest land animal?',
-    correctAnswer: 'Elephant'
+    correctAnswer: 'Elephant',
+    timeLimit : 7
 };

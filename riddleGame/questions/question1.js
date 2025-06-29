@@ -3,5 +3,6 @@ export const question1 = {
     category: 'history',
     difficulty: 'easy',
     questionDescription: 'In what year did World War II begin?',
-    correctAnswer: 1939
+    correctAnswer: 1939,
+    timeLimit : 7
 };

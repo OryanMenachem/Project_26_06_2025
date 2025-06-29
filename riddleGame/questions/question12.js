@@ -1,6 +1,6 @@
 export const question12 = {
     id: 12,
-    category: 'geography',
-    questionDescription: 'Which desert is the largest in the world?',
-    correctAnswer: 'Sahara'
+    category: 'sports',
+    questionDescription: 'In which sport can you score a "strike"?',
+    correctAnswer: 'Bowling'
 };

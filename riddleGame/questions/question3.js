@@ -3,5 +3,6 @@ export const question3 = {
     category: 'science',
     difficulty: 'hard',
     questionDescription: 'What is the chemical symbol for water?',
-    correctAnswer: 'H20'
+    correctAnswer: 'H20',
+    timeLimit : 15
 };
