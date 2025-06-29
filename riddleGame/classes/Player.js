@@ -1,4 +1,5 @@
-import * as Colors from '../Colors.js'
+import * as Colors from '../Colors.js';
+import readline from 'readline-sync';
 
 export class Player {
 
@@ -15,8 +16,8 @@ export class Player {
 
     showStats() {
 
-        console.log(`Total time: `, Colors.cyanColor(Math.floor(this.times.reduce((acc, num) => acc + num, 0)/ 1000)), ` seconds`);
-        console.log(`Average time per question: `, Colors.cyanColor(Math.floor(this.times.reduce((acc, num) => acc + num, 0) / this.times.length / 1000)), ` seconds`);
+        console.log(`Total time: `, Colors.cyanColor((this.times.reduce((acc, num) => acc + num, 0)/ 1000).toFixed(1)), ` seconds`);
+        console.log(`Average time per question: `, Colors.cyanColor((this.times.reduce((acc, num) => acc + num, 0) / this.times.length / 1000).toFixed(1)), ` seconds`);
         
     }
 
@@ -25,69 +26,41 @@ export class Player {
 
 
 
-
-
-
-
-// export function displayOrderTime(time) {
-
-  
-//     let timeStr =  Math.floor(time).toString();
-
-
-//     if (timeStr.length < 3) {return `Unsignificant number (less than a second)`}
-
-
-
-//     const result =  timeStr.slice(0,timeStr.length -2).padStart(4, '0').split('').map((val, i) => isZero(val, i))
-//     result.splice(2, 0, ':')
-//     return result.join('');
- 
-
-
-
-
-
+export function inputplayerName() {
     
-// }
+    let playerName;
+
+    while (true) {
+        
+        console.log(`Please enter your name:  `);
+        playerName = readline.question(Colors.cyanColor(`> `));
+
+        if (playerName) {return playerName;}
+
+        console.log(Colors.errorColor(`No name entered!`));
+        
+    }
+
+}
 
 
 
-// let temp = 1;
-
-
-// function isZero(num, i, arr)  {
-
-  
-//   num = parseInt(num)
-
-//   if (i == 3) {return num}
-
-//   else if (i == 2) {
-//     if (num == 0) {return num} 
-
-//     if (num > 5) {temp = 1; return num % 6}
+export const inputDifficultyLevel = () => { 
     
-//     return num;
-//   }
+    let difficultyLevel;
+
+    while (true) {
+        
+    console.log('choose level: easy / medium / hard\n');
+    difficultyLevel = readline.question(Colors.cyanColor('> '))
+
+    if (['easy','medium','hard'].includes(difficultyLevel)) {return difficultyLevel;}
+
+    console.log(Colors.errorColor('\nThere is no such level!\n'));
     
 
-//   else if (i == 1) {
-    
-//     if (num == 0) { return num + temp}
-//     return (num + temp) % 10
-//    }
-//   else {return num}
-// };
-
-
-
-
-
-
-// console.log(displayOrderTime(369345));
-
-
+    }
+}
 
 
 
