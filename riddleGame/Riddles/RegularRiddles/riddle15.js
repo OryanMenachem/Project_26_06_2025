@@ -1,4 +1,4 @@
-export const question15 = {
+export const riddle15 = {
     id: 15,
     category: 'film',
     questionDescription: 'Which movie features the quote "I\'ll be back"?',

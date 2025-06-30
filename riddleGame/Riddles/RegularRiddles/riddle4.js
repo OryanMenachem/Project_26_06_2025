@@ -1,4 +1,4 @@
-export const question4 = {
+export const riddle4 = {
     id: 4,
     category: 'sports',
     difficulty: 'easy',

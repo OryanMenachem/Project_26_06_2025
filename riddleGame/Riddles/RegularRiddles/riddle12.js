@@ -1,4 +1,4 @@
-export const question12 = {
+export const riddle12 = {
     id: 12,
     category: 'sports',
     questionDescription: 'In which sport can you score a "strike"?',
