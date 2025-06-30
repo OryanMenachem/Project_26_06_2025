@@ -1,4 +1,4 @@
-import * as Colors  from './Colors.js';
+import * as Colors  from './colors.js';
 
 export const sayWelcome = () => {return `\nWelcome to the` + Colors.cyanColor(` QUIZ `) + `game!\n`};
 
