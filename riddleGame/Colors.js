@@ -2,6 +2,6 @@ import chalk from 'chalk';
 
 export const cyanColor = chalk.cyan;
 
-export const errorColor = chalk.hex(`#FF3131`);
+export const errorColor = chalk.red;
 
-export const successColor = chalk.hex(`#39FF14`);
+export const successColor = chalk.green;
