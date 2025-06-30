@@ -1,4 +1,4 @@
-export const question8 = {
+export const riddle8 = {
     id: 8,
     category: 'geography',
     questionDescription: 'Which desert is the largest in the world?',

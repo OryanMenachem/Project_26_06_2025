@@ -1,4 +1,4 @@
-export const question10 = {
+export const riddle10 = {
     id: 10,
     category: 'history',
     questionDescription: 'Who was the first president of the United States?',
