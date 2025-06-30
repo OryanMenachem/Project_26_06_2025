@@ -1,17 +1,19 @@
 import readline, { question } from 'readline-sync';
-import * as Colors from '../Colors.js'
+import * as Colors from '../General/colors.js'
 
 
 
-export class Question {
 
-    constructor(questionObj) {
+export class Riddle {
 
-        this.id = questionObj.id;
-        this.category = questionObj.category;
-        this.difficulty = questionObj.difficulty;
-        this.questionDescription = questionObj.questionDescription;
-        this.correctAnswer = questionObj.correctAnswer;
+    constructor(riddleObj) {
+
+        this.id = riddleObj.id;
+        this.category = riddleObj.category;
+        this.difficulty = riddleObj.difficulty;
+        this.riddleDescription = riddleObj.questionDescription;
+        this.correctAnswer = riddleObj.correctAnswer;
+        this.timeLimit = riddleObj.timeLimit;
     }
 
 
@@ -19,10 +21,11 @@ export class Question {
 
         while (true) {
 
-            console.log(`\nQuestion ${this.id}:`, Colors.cyanColor(this.category), `\n`);
+            console.log(`\nRiddle ${this.id}:`, Colors.cyanColor(this.category), `\n`);
+
             console.log(`Difficulty Level:`, Colors.cyanColor(this.difficulty), `\n`);
             
-            console.log(`${this.questionDescription} \n`);
+            console.log(`${this.riddleDescription} \n`);
 
             const answer = readline.question(Colors.cyanColor(`> `));
  
@@ -48,9 +51,6 @@ export class Question {
 
 
 
-
-                
-            
 
 
 

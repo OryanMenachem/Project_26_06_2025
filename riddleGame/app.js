@@ -1,8 +1,51 @@
-import readline from 'readline-sync';
-import questionSet from './questions/allQuestions.js'
-import {Question} from './classes/Riddle.js';
-import {Player} from './classes/Player.js';
-import * as Colors  from './Colors.js';
+import * as messages from './General/consolePrinting.js';
+import riddlesSet from './Riddles/index.js';
+import {inputplayerName, inputDifficultyLevel} from './Player/playerInputFunc.js';
+import {Player} from './Player/playerClass.js';
+import {askAllRiddles} from './Riddles/askAllRiddlesFunc.js'
+
+
+
+
+
+
+// Prints a greeting message to the console.
+console.log(messages.sayWelcome());  
+
+
+// Prints a general description of the game to the console.
+console.log(messages.displayInstructions());  
+
+
+//  Asks the user for their name and stores it in a variable.
+const playerName = inputplayerName();  
+
+
+// Prints a "Hello" message to the user in the console.
+console.log(messages.sayHelloPlayer(playerName));  
+
+
+// Creates a Player instance with the user's name.
+const player1 = new Player(playerName);  
+
+
+// Shows the user difficulty levels to choose from, and stores the user's choice in a variable.
+const difficultyLevel = inputDifficultyLevel();  
+
+// Loads questions into an array based on the difficulty the user chose.
+const arrayOfQuestions = riddlesSet.filter((element => element.difficulty == difficultyLevel))  
+
+
+// Asks all questions based on the chosen difficulty.
+askAllRiddles(arrayOfQuestions, player1);  
+
+
+// Prints a congratulation message to the console for winning the game.
+messages.DisplaySuccessMessage();  
+
+
+// Prints to the console the total game time and the average time the user took to answer each question.
+player1.showStats();  
 
 
 
@@ -11,63 +54,64 @@ import * as Colors  from './Colors.js';
 
 
 
-console.log(`\nWelcome to the` + Colors.cyanColor(` QUIZ `) + `game!\n`);
-
-console.log(`At each stage you will have to answer a trivia question from a specific category until you finish all the questions.\n`);
-
-let playerName;
-
-while (true) {
-    
-    console.log(`Please enter your name:  `);
-    playerName = readline.question(Colors.cyanColor(`> `));
-
-    if (playerName) {break;}
-
-    console.log(Colors.errorColor(`No name entered!`));
-    
-}
-
-
-console.log(`\nHello ` + Colors.cyanColor(playerName) + `, starting right away...\n`);
-
-
-const player1 = new Player(playerName);
 
 
 
-let difficultyLevel;
 
 
-while (true) {
-    
-   console.log('choose level: easy / medium / hard\n');
-   difficultyLevel = readline.question(Colors.cyanColor('> '))
-   if (['easy','medium','hard'].includes(difficultyLevel)) {break;}
-   console.log(Colors.errorColor('\nThere is no such level!\n'));
-   
 
-}
 
-const arrayOfQuestions = questionSet.filter((element => element.difficulty == difficultyLevel))
 
-for (const ques of arrayOfQuestions) {
 
-    const questionsClass = new Question(ques);
 
-    const startTime = Date.now();
 
-    questionsClass.ask();
 
-    const endTime = Date.now();
 
-    player1.recordTime(startTime, endTime);
 
-}
 
-console.log(Colors.cyanColor(`Congratulations! `), `you won the QUIZ game.\n`);
 
-player1.showStats();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     

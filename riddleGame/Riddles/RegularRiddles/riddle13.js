@@ -1,5 +1,5 @@
-export const question17 = {
-    id: 17,
+export const question13 = {
+    id: 13,
     category: 'music',
     questionDescription: 'Which band wrote the song "Bohemian Rhapsody"?',
     correctAnswer: 'Queen'
