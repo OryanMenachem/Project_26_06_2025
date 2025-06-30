@@ -3,5 +3,3 @@ node_modules/
 .DS_Store
 Thumbs.db
 ehthumbs.db
-package-lock.json
-package.json

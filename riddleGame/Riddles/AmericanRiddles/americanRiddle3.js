@@ -1,4 +1,4 @@
-export const americanQuestion3 = {
+export const americanRiddle3 = {
     id: 9,
     category: 'philosophy',
     difficulty: 'hard',

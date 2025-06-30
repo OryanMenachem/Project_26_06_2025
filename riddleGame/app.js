@@ -1,7 +1,8 @@
-import * as messages from './consolePrinting.js'
-import questionSet from './questions/allQuestions.js'
-import {askAllQuestions} from './classes/Question.js';
-import {Player, inputplayerName, inputDifficultyLevel} from './classes/Player.js';
+import * as messages from './General/consolePrinting.js';
+import riddlesSet from './Riddles/index.js';
+import {inputplayerName, inputDifficultyLevel} from './Player/playerInputFunc.js';
+import {Player} from './Player/playerClass.js';
+import {askAllRiddles} from './Riddles/askAllRiddlesFunc.js'
 
 
 
@@ -32,11 +33,11 @@ const player1 = new Player(playerName);
 const difficultyLevel = inputDifficultyLevel();  
 
 // Loads questions into an array based on the difficulty the user chose.
-const arrayOfQuestions = questionSet.filter((element => element.difficulty == difficultyLevel))  
+const arrayOfQuestions = riddlesSet.filter((element => element.difficulty == difficultyLevel))  
 
 
 // Asks all questions based on the chosen difficulty.
-askAllQuestions(arrayOfQuestions, player1);  
+askAllRiddles(arrayOfQuestions, player1);  
 
 
 // Prints a congratulation message to the console for winning the game.
