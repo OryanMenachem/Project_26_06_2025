@@ -1,7 +1,7 @@
 import readline from 'readline-sync';
 import * as Colors from '../General/colors.js'
 
-export function inputplayerName() {
+export function inputPlayerName() {
     
     let playerName;
 

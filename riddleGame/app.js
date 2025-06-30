@@ -1,6 +1,6 @@
 import * as messages from './General/consolePrinting.js';
 import riddlesSet from './Riddles/index.js';
-import {inputplayerName, inputDifficultyLevel} from './Player/playerInputFunc.js';
+import {inputPlayerName, inputDifficultyLevel} from './Player/playerInputFunc.js';
 import {Player} from './Player/playerClass.js';
 import {askAllRiddles} from './Riddles/askAllRiddlesFunc.js'
 
@@ -18,7 +18,7 @@ console.log(messages.displayInstructions());
 
 
 //  Asks the user for their name and stores it in a variable.
-const playerName = inputplayerName();  
+const playerName = inputPlayerName();  
 
 
 // Prints a "Hello" message to the user in the console.
