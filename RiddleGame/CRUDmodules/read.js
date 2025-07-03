@@ -1,5 +1,5 @@
 import * as fsp from 'node:fs/promises'
-import { json } from 'stream/consumers';
+
 
 
 export default async function getDbContents(DBpath) {
@@ -8,7 +8,6 @@ export default async function getDbContents(DBpath) {
 
        const dbContents = await fsp.readFile(DBpath, 'utf-8');
 
-
        if (!dbContents) { throw new Error('error'); }
 
        return dbContents;
@@ -16,5 +15,6 @@ export default async function getDbContents(DBpath) {
 
     catch (error) { return error.message }
 }
+
 
 
