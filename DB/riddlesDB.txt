@@ -96,7 +96,7 @@
     "timeLimit": null
   },
   {
-    "id": 11,
+    "id": 12,
     "category": "music",
     "difficulty": "hard",
     "questionDescription": "Which band wrote the song \"Bohemian Rhapsody\"?",
@@ -104,7 +104,7 @@
     "timeLimit": null
   },
   {
-    "id": 12,
+    "id": 13,
     "category": "math",
     "difficulty": "hard",
     "questionDescription": "What is the value of pi (up to 2 decimal places)?",
@@ -112,7 +112,7 @@
     "timeLimit": null
   },
   {
-    "id": 13,
+    "id": 14,
     "category": "film",
     "difficulty": "hard",
     "questionDescription": "Which movie features the quote \"I'll be back\"?",
@@ -120,7 +120,7 @@
     "timeLimit": null
   },
   {
-    "id": 14,
+    "id": 15,
     "category": "philosophy",
     "difficulty": "medium",
     "questionDescription": "Who is considered the father of Western philosophy? \n1. Socrates  \n2. Aristotle  \n3. Descartes",
@@ -128,7 +128,7 @@
     "timeLimit": null
   },
   {
-    "id": 15,
+    "id": 16,
     "category": "philosophy",
     "difficulty": "medium",
     "questionDescription": "What is the main idea of René Descartes' famous statement \"Cogito, ergo sum\"? \n1. Knowledge comes from emotion  \n2. I think, therefore I am  \n3. Reality is an illusion",
@@ -136,23 +136,11 @@
     "timeLimit": null
   },
   {
-    "id": 16,
+    "id": 17,
     "category": "philosophy",
     "difficulty": "hard",
     "questionDescription": "Which philosopher wrote \"The Republic\"? \n1. Aristotle  \n2. Plato  \n3. Nietzsche",
     "correctAnswer": 2,
     "timeLimit": null
-  },
-  {
-    "id": 17,
-    "category": "philosophy",
-    "difficulty": "hard",
-    "questionDescription": "Which philosopher wrote 'The Republic'? \n1. Aristotle  \n2. Plato  \n3. Nietzsche",
-    "correctAnswer": 2,
-    "timeLimit": null
-  },
-  {
-    "id": 19,
-    "name": "fff"
-  },
+  }
 ]
