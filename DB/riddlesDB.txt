@@ -1,1 +1,165 @@
-[]
+[
+    {
+    id: 1,
+    category: 'history',
+    difficulty: 'easy',
+    questionDescription: 'In what year did World War II begin?',
+    correctAnswer: 1939,
+    timeLimit : null
+    },
+
+    {
+    id: 2,
+    category: 'geography',
+    difficulty: 'medium',
+    questionDescription: 'What is the capital city of Canada?',
+    correctAnswer: 'Ottawa',
+    timeLimit : null
+    },
+
+    {
+    id: 3,
+    category: 'science',
+    difficulty: 'hard',
+    questionDescription: 'What is the chemical symbol for water?',
+    correctAnswer: 'H20',
+    timeLimit : null
+    },
+
+    {
+    id: 4,
+    category: 'sports',
+    difficulty: 'easy',
+    questionDescription: 'How many players are there in a soccer team on the field?',
+    correctAnswer: 11,
+    timeLimit : null
+    },
+
+    {
+    id: 5,
+    category: 'math',
+    difficulty: 'easy',
+    questionDescription: 'What is the square root of 64?',
+    correctAnswer: 8,
+    timeLimit : null
+    },
+
+    {
+    id: 6,
+    category: 'animals',
+    difficulty: 'easy',
+    questionDescription: 'Which animal is known as the largest land animal?',
+    correctAnswer: 'Elephant',
+    timeLimit : null
+    },
+
+    {
+    id: 7,
+    category: 'science',
+    difficulty: 'easy',
+    questionDescription: 'What planet is known as the Red Planet?',
+    correctAnswer: 'Mars',
+    timeLimit: null
+    },
+
+    {
+    id: 8,
+    category: 'geography',
+    difficulty: 'easy',
+    questionDescription: 'Which desert is the largest in the world?',
+    correctAnswer: 'Sahara',
+    timeLimit: null
+    },
+
+    {
+    id: 9,
+    category: 'technology',
+    difficulty: 'easy',
+    questionDescription: 'Who founded Microsoft?',
+    correctAnswer: 'Bill Gates',
+    timeLimit: null
+    },
+
+    {
+    id: 10,
+    category: 'history',
+    difficulty: 'medium',
+    questionDescription: 'Who was the first president of the United States?',
+    correctAnswer: 'George Washington',
+    timeLimit: null
+    },
+
+    {
+    id: 11,
+    category: 'literature',
+    difficulty: 'hard',
+    questionDescription: 'Who wrote "1984"?',
+    correctAnswer: 'George Orwell',
+    timeLimit: null
+    },
+
+    {
+    id: 12,
+    category: 'sports',
+    difficulty: 'medium',
+    questionDescription: 'In which sport can you score a "strike"?',
+    correctAnswer: 'Bowling',
+    timeLimit: null
+    },
+
+    {
+    id: 13,
+    category: 'music',
+    difficulty: 'hard',
+    questionDescription: 'Which band wrote the song "Bohemian Rhapsody"?',
+    correctAnswer: 'Queen',
+    timeLimit: null 
+    },
+
+    {
+    id: 14,
+    category: 'math',
+    difficulty: 'hard',
+    questionDescription: 'What is the value of pi (up to 2 decimal places)?',
+    correctAnswer: 3.14,
+    timeLimit: null
+    },
+
+    {
+    id: 15,
+    category: 'film',
+    difficulty: 'hard',
+    questionDescription: 'Which movie features the quote "I\'ll be back"?',
+    correctAnswer: 'The Terminator',
+    timeLimit: null
+    },
+
+    {
+    id: 16,
+    category: 'philosophy',
+    difficulty: 'medium',
+    questionDescription: 'Who is considered the father of Western philosophy? \n1. Socrates  \n2. Aristotle  \n3. Descartes',
+    correctAnswer: 1,
+    timeLimit: null
+    },
+
+    {
+    id: 17,
+    category: 'philosophy',
+    difficulty: 'medium',
+    questionDescription: 'What is the main idea of René Descartes\' famous statement "Cogito, ergo sum"? \n1. Knowledge comes from emotion  \n2. I think, therefore I am  \n3. Reality is an illusion',
+    correctAnswer: 2,
+    timeLimit: null
+    },
+
+    {
+    id: 18,
+    category: 'philosophy',
+    difficulty: 'hard',
+    questionDescription: 'Which philosopher wrote "The Republic"? \n1. Aristotle  \n2. Plato  \n3. Nietzsche',
+    correctAnswer: 2,
+    timeLimit: null
+    },
+
+
+]
