@@ -1,5 +1,5 @@
 import readline from 'readline-sync';
-import * as Colors from '../General/colors.js'
+import * as Colors from '../UI/colors.js'
 
 export function inputPlayerName() {
     

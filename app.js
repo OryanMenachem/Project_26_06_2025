@@ -1,8 +1,8 @@
-import * as messages from './General/consolePrinting.js';
-import riddlesSet from './Riddles/index.js';
-import {inputPlayerName, inputDifficultyLevel} from './Player/playerInputFunc.js';
-import {Player} from './Player/playerClass.js';
-import {askAllRiddles} from './Riddles/askAllRiddlesFunc.js'
+import * as messages from './RiddleGame/UI/consolePrinting.js';
+import riddlesSet from './RiddleGame/Riddles/importRiddles .js';
+import {inputPlayerName, inputDifficultyLevel} from './RiddleGame/Player/playerInputFunc.js';
+import {Player} from './RiddleGame/Player/playerClass.js';
+import {askAllRiddles} from './RiddleGame/Riddles/askAllRiddlesFunc.js'
 
 
 
