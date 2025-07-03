@@ -37,7 +37,7 @@ const arrayOfQuestions = riddlesSet.filter((element => element.difficulty == dif
 
 
 // Asks all questions based on the chosen difficulty.
-askAllRiddles(arrayOfQuestions, player1);  
+askAllRiddles(arrayOfQuestions, player1);   
 
 
 // Prints a congratulation message to the console for winning the game.
