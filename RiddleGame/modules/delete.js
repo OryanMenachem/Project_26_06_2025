@@ -4,6 +4,23 @@ import dbContents from './read.js';
 import * as colors from '../UI/colors.js';
 
 
+
+
+export default async function deleteManager(dbPath) {
+
+    let dbContent = await dbContents(dbPath);
+
+    dbContent = JSON.parse(dbContent)
+
+    const id = inputId();
+    
+    if (!deleteObj(dbContent, id)) {return}
+    
+    updateDB(dbContent);
+
+}
+
+
 function inputId() {
 
      let id;
@@ -18,6 +35,7 @@ function inputId() {
         console.log(colors.errorColor(`\nNo id entered!\n`));
         
         }
+
 }
 
 function deleteObj(dbContent, id) {
@@ -53,21 +71,8 @@ async function updateDB(dbContent) {
 
   
    
-export default async function deleteManager(dbPath) {
-
-    let dbContent = await dbContents(dbPath);
-
-    dbContent = JSON.parse(dbContent)
-
-    const id = inputId();
-    
-    if (!deleteObj(dbContent, id)) {return}
-    
-    updateDB(dbContent);
-
-}
 
 
-const dbPath = "C:/Users/om316/OneDrive/Desktop/JavaScript/Projects/Project_26_06_2025/DB/riddlesDB.txt"
+// const dbPath = "C:/Users/om316/OneDrive/Desktop/JavaScript/Projects/Project_26_06_2025/DB/riddlesDB.txt"
 
-deleteManager(dbPath);
+// deleteManager(dbPath);
