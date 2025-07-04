@@ -10,8 +10,6 @@ export default async function addingObjToTheDB(dbPath, obj)
     let dbContentArray = await dbContents(dbPath);
 
     dbContentArray = JSON.parse(dbContentArray)
-  
-    obj.id = dbContentArray.length;   // Updates the id to the object's position in the array.
    
     dbContentArray.push(obj);
 

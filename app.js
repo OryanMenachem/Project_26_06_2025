@@ -3,13 +3,14 @@
 // import {inputPlayerName, inputDifficultyLevel} from './RiddleGame/Player/playerInputFunc.js';
 // import {Player} from './RiddleGame/Player/playerClass.js';
 // import {askAllRiddles} from './RiddleGame/Riddles/askAllRiddlesFunc.js'
-import input from './inputRiddleObj.js';
-import write from './RiddleGame/modules/create.js'
+// // import input from './inputRiddleObj.js';
+// // import write from './RiddleGame/modules/create.js'
+import addingObjToTheDB from './RiddleGame/modules/delete.js';
 
 const dbPath = "C:/Users/om316/OneDrive/Desktop/JavaScript/Projects/Project_26_06_2025/DB/riddlesDB.txt"
-write(dbPath,input());
+// // write(dbPath,input());
 
-
+addingObjToTheDB(dbPath, 172)
 
 // // Prints a greeting message to the console.
 // console.log(messages.sayWelcome());  

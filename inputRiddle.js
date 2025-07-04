@@ -2,12 +2,13 @@ import readline from 'readline-sync';
 import addingRiddleToTheDB from './RiddleGame/modules/create.js'
 import * as colors from './RiddleGame/UI/colors.js'
 
+let counter = 18;
 
 export default function createRiddle() {
 
     const riddle = {
 
-     id: null,
+     id: counter,
      category: inputCategory(),
      difficulty: inputDifficulty(),
      questionDescription : inputQuestionDescription(),
@@ -16,6 +17,8 @@ export default function createRiddle() {
 
     };
 
+    counter++; //   Increases the counter by one so that the id is always unique.
+    
     return riddle;
 }
     
